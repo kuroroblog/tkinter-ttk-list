@@ -135,7 +135,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、radiobutton Widgetを作成する。
         # text : テキスト情報
         # Radiobuttonについて : https://kuroro.blog/python/ztJbt5uabbTBMCGcljHc/
-        radiobutton = tk.Radiobutton(frame, text="test")
+        radiobutton = tk.Radiobutton(frame, text="tkinter radiobutton")
         # frame Widget(Frame)を親要素として、radiobutton Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         radiobutton.pack(pady=10)
@@ -149,7 +149,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、radiobutton Widgetを作成する。
         # text : テキスト情報
         # Radiobuttonについて : https://kuroro.blog/python/ztJbt5uabbTBMCGcljHc/
-        ttkRadiobutton = ttk.Radiobutton(frame, text="test")
+        ttkRadiobutton = ttk.Radiobutton(frame, text="ttk radiobutton")
         # frame Widget(Frame)を親要素として、radiobutton Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         ttkRadiobutton.pack()
