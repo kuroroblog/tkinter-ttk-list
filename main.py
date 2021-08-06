@@ -166,7 +166,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、menubutton Widgetを作成する。
         # text : テキスト情報
         # Menubuttonについて : https://kuroro.blog/python/Dfq4VCJ7OiEfYJv6ySge/
-        menubutton = tk.Menubutton(frame, text="test")
+        menubutton = tk.Menubutton(frame, text="tkinter menubutton")
         # frame Widget(Frame)を親要素として、menubutton Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         menubutton.pack(pady=10)
@@ -180,7 +180,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、menubutton Widgetを作成する。
         # text : テキスト情報
         # Menubuttonについて : https://kuroro.blog/python/Dfq4VCJ7OiEfYJv6ySge/
-        ttkMenubutton = ttk.Menubutton(frame, text="test")
+        ttkMenubutton = ttk.Menubutton(frame, text="ttk menubutton")
         # frame Widget(Frame)を親要素として、menubutton Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         ttkMenubutton.pack()
