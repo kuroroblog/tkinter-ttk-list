@@ -198,7 +198,7 @@ class Application(tk.Frame):
         # text : テキスト情報
         # width : 幅の設定
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
-        label = tk.Label(frame, text="test", width=10)
+        label = tk.Label(frame, text="tkinter label", width=10)
         # frame Widget(Frame)を親要素として、label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         label.pack(pady=10)
@@ -213,7 +213,7 @@ class Application(tk.Frame):
         # text : テキスト情報
         # width : 幅の設定
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
-        ttkLabel = ttk.Label(frame, text="test", width=10)
+        ttkLabel = ttk.Label(frame, text="ttk label", width=10)
         # frame Widget(Frame)を親要素として、label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         ttkLabel.pack()
