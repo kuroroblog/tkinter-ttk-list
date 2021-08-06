@@ -273,7 +273,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、checkbutton Widgetを作成する。
         # text : テキスト情報
         # Checkbuttonについて : https://kuroro.blog/python/gspi4F2pMIkzHN7l0f1F/
-        ttkCheckbutton = ttk.Checkbutton(frame, text="test")
+        ttkCheckbutton = ttk.Checkbutton(frame, text="ttk checkbutton")
         # frame Widget(Frame)を親要素として、checkbutton Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         ttkCheckbutton.pack()
