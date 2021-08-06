@@ -68,7 +68,7 @@ class Application(tk.Frame):
         # height : 高さを設定
         # width : 幅を設定
         # Textについて : https://kuroro.blog/python/bK6fWsP9LMqmER1CBz9E/
-        textForTtkScrollvar = tk.Text(frame, height=4, width=10)
+        textForTtkScrollbar = tk.Text(frame, height=4, width=10)
 
         # ttk.Scrollbar()の外観を変更
         style = ttk.Style()
@@ -80,16 +80,16 @@ class Application(tk.Frame):
         # orient option : 垂直scrollbarを作成するため、tk.VERTICALを設定。水平scrollbarの場合は、tk.HORIZONTALを設定する。
         # command option : scrollbar Widgetを動かした場合に、連動して表示する内容を設定。今回は、text Widgetをy軸方向へ動かした内容を表示する。
         # Scrollbarについて : https://kuroro.blog/python/vgx53M7D1d6C0R8ejp0V/
-        ttkScrollbar = ttk.Scrollbar(frame, orient=tk.VERTICAL, command=textForTtkScrollvar.yview)
+        ttkScrollbar = ttk.Scrollbar(frame, orient=tk.VERTICAL, command=textForTtkScrollbar.yview)
 
         # scrollbar Widgetをtext Widgetに反映する。
         # scrollbar Widgetの設定内容をtext Widgetと紐付ける。
         # yscrollcommand : text Widget内で上下移動した場合に、scrollbarが追従するように設定する。
-        textForTtkScrollvar["yscrollcommand"] = ttkScrollbar.set
+        textForTtkScrollbar["yscrollcommand"] = ttkScrollbar.set
 
         # frame Widget(Frame)を親要素とした場合に、text Widgetをどのように配置するのか?
         # gridについて : https://kuroro.blog/python/JoaowDiUdLAOj3cSBxiX/
-        textForTtkScrollvar.grid(row=1, column=0)
+        textForTtkScrollbar.grid(row=1, column=0)
         # frame Widget(Frame)を親要素とした場合に、scrollbar Widgetをどのように配置するのか?
         # gridについて : https://kuroro.blog/python/JoaowDiUdLAOj3cSBxiX/
         ttkScrollbar.grid(row=1, column=1, sticky=(tk.N, tk.S))
